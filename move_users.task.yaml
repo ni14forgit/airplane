@@ -1,0 +1,29 @@
+# Used by Airplane to identify your task. Do not change.
+slug: move_users
+
+# A human-readable name for your task.
+name: move_users
+
+# A human-readable description for your task.
+description: 'Airplane task to sync added users from Postgres table onto Airtable'
+
+# Configuration for a Node task.
+node:
+    # The path to the .ts or .js file containing the logic for this task. This
+    # can be absolute or relative to the location of the definition file.
+    entrypoint: move_users.js
+
+    # The version of Node to use. Valid values: 12, 14, 15, 16.
+    nodeVersion: '16'
+
+    envVars:
+        SUPABASE_KEY:
+            value:
+        SUPABASE_DB_URL:
+            value:
+        AIRTABLE_KEY:
+            value:
+        AIRTABLE_BASE_ID:
+            value:
+        AIRTABLE_TIMESTAMP_RECORD_ID:
+            value:
